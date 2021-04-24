@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>VIM</title>
+
+	<link rel="stylesheet" href="reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js/dist/theme/solarized.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1> Vim </h1>
+				<hr />
+			</section>
+			<section>
+				<section>
+					<h3>What is Vim? and why Vim?</h3>
+					<img src="vim.png" style="height: 40rem;" />
+				</section>
+				<section id="why">
+					<h3>What is Vim? and why Vim?</h3>
+					<p>
+					<ul>
+						<li>
+							Vim is a <a href="#/modal-editor"><em>modal</em></a> editor
+						</li>
+						<li>
+							It's <a href="#/scalable"><em>scalable</em></a>
+						</li>
+						<li>
+							It's powerful. It is <a href="#/language"><em>like a language</em></a>
+						</li>
+					</ul>
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<h3> Let's change a few things first</h3>
+			</section>
+
+			<section id="modal-editor">
+				<h3>What is a modal editor? you might ask</h3>
+				<p>
+				<ul>
+					<li>
+						<a href="#/normal">Normal</a>
+					</li>
+					<li>
+						<a href="#/insert">Insert</a>
+					</li>
+					<li>
+						<a href="#/visual">Visual</a>
+					</li>
+				</ul>
+				</p>
+			</section>
+
+			<section id="scalable">
+				<h3> What do you mean by "scalable"?</h3>
+				<p>
+				<ul>
+					<li>Vim can be used to edit just config files or it can become your entire writing and coding platform.</li>
+					<li>You don't have to worry about learning new editors.</li>
+				</ul>
+				</p>
+			</section>
+
+			<section id="language">
+				<h3> Don't tell me this is another programming language </h3>
+			</section>
+
+			<section>
+				<section id="normal">
+					<h3> Normal Mode </h3>
+
+					<ul>
+						<li><b>h</b>: move left </li>
+						<li><b>j</b>: move down </li>
+						<li><b>k</b>: move up </li>
+						<li><b>l</b>: move right </li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><b>0</b>: move to the beginning of the line</li>
+						<li><b>$</b>: move to the end of the line</li>
+						<li><b>w</b>: move forward one word</li>
+						<li><b>b</b>: move back one word</li>
+						<li><b>e</b>: move to the end of your word</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><b>gg</b>: go to the top of the file</li>
+						<li><b>G</b>: go to the bottom of the file</li>
+						<li><b>H</b>: move to the top of the screen</li>
+						<li><b>M</b>: move to the middle of the screen</li>
+						<li><b>L</b>: move to the bottom of the screen</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><b>Ctrl-i</b>: jump to your previos navigation location</li>
+						<li><b>Ctrl-o</b>: jump back to where you were</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="insert">
+				<h3> Insert Mode </h3>
+				<ul>
+					<li>i: insert before the cursor</li>
+					<li>a: append after the cursor</li>
+					<li>I: insert at the beginning of the line</li>
+					<li>A: append at the end of the line</li>
+					<li>o: open a new line below the current one</li>
+					<li>O: open a new line above the current one</li>
+					<li>r: replace the one character under your cursor</li>
+					<li>R: replace the character under your cursor, but just keep typing afterwards</li>
+				</ul>
+			</section>
+
+			<section id="visual">
+				<h3> Visual Mode </h3>
+				<ul>
+					<li><b>character-based</b>: v</li>
+					<li><b>line-based</b>: V</li>
+					<li><b>paragraphs</b>: Ctrl-v</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3> Searching time </h3>
+
+			</section>
+
+			<section>
+				<h3> Repeating Actions </h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="reveal.js/dist/reveal.js"></script>
+	<script src="reveal.js/plugin/notes/notes.js"></script>
+	<script src="reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
